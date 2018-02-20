@@ -1,0 +1,24 @@
+<br>
+<h2>Usuarios</h2>
+<br>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Cedula</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let usuario of usuarios">
+        <th scope="row">{{usuario.id}}</th>
+        <td>{{usuario.cedula}}</td>
+        <td>{{usuario.nombre}}</td>
+        <td>{{usuario.edad}}</td>
+        <td>{{usuario.email}}</td>
+      </tr>      
+    </tbody>
+  </table>

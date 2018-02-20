@@ -1,0 +1,58 @@
+<br>
+<h2>Mis Reservas</h2>
+<br>
+
+<b>Cedulas dispobles:</b>
+{{listCedulas}}
+
+<form [formGroup]="frmCedula">
+  <div class="input-group mb-3">
+    <input type="number" 
+            class="form-control" 
+            placeholder="Ingrese cedula" 
+            aria-label="Ingrese cedula" 
+            aria-describedby="basic-addon2"
+            formControlName="cedula">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" 
+              type="button"
+              (click)="getReservas()">
+                Consultar
+      </button>
+    </div>
+  </div>
+</form>
+
+<div *ngIf="vuelos">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Origen</th>
+        <th scope="col">Destino</th>
+        <th scope="col">Fecha Salida</th>
+        <th scope="col">Hora Salida</th>
+        <th scope="col">Fecha llegada</th>
+        <th scope="col">Hora llegada</th>
+        <th scope="col">Serie del avión</th>
+        <th scope="col">Precio</th>
+        <th scope="col">Acciones</th>  
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vuelo of vuelos">
+        <th>{{vuelo.origen}}</th>
+        <td>{{vuelo.destino}}</td>
+        <td>{{vuelo.fecha_salida}}</td>
+        <td>{{vuelo.hora_salida}}</td>
+        <td>{{vuelo.fecha_llegada}}</td>
+        <td>{{vuelo.hora_llegada}}</td>
+        <td>{{vuelo.serie_avion}}</td>
+        <td>{{vuelo.precio}}</td>
+        <td>
+          <!-- <button type="button" class="btn btn-primary" (click)="seleccionar(vuelo)">Reservar</button> -->
+          <button class="btn btn-primary" (click)="open(vuelo, content)">Reservar</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div> 

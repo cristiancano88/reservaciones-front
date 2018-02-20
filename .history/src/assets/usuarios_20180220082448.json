@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1,
+    "cedula": 1000,
+    "nombre": "Leanne Graham",
+    "edad": 15,
+    "email": "Sincere@april.biz"
+  },
+  {
+    "id": 2,
+    "cedula": 1001,
+    "nombre": "Ervin Howell",
+    "edad": 18,
+    "email": "Shanna@melissa.tv"
+  },
+  {
+    "id": 3,
+    "cedula": 1002,
+    "nombre": "Clementine Bauch",
+    "edad": 20,
+    "email": "Nathan@yesenia.net"
+  },
+  {
+    "id": 4,
+    "cedula": 1003,
+    "nombre": "Patricia Lebsack",
+    "edad": 15,
+    "email": "Julianne.OConner@kory.org"
+  },
+  {
+    "id": 5,
+    "cedula": 1004,
+    "nombre": "Chelsey Dietrich",
+    "edad": 19,
+    "email": "Lucio_Hettinger@annie.ca"
+  },
+  {
+    "id": 6,
+    "cedula": 1005,
+    "nombre": "Mrs. Dennis Schulist",
+    "edad": 26,
+    "email": "Karley_Dach@jasper.info"
+  },
+  {
+    "id": 7,
+    "cedula": 1006,
+    "nombre": "Kurtis Weissnat",
+    "edad": 21,
+    "email": "Telly.Hoeger@billy.biz"
+  },
+  {
+    "id": 8,
+    "cedula": 1007,
+    "nombre": "Nicholas Runolfsdottir V",
+    "edad": 16,
+    "email": "Sherwood@rosamond.me"
+  },
+  {
+    "id": 9,
+    "cedula": 1008,
+    "nombre": "Glenna Reichert",
+    "edad": 18,
+    "email": "Chaim_McDermott@dana.io"
+  },
+  {
+    "id": 10,
+    "cedula": 1009,
+    "nombre": "Clementina DuBuque",
+    "edad": 17,
+    "email": "Rey.Padberg@karina.biz"
+  },
+  {
+    "id": 11,
+    "cedula": 1010,
+    "nombre": "Juan",
+    "edad": 20,
+    "email": "juan@gmail.com"
+  }
+]

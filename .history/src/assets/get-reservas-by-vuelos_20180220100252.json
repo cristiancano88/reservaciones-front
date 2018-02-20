@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "origen": "Sao Paulo",
+    "destino": "Santiago",
+    "fecha_salida": "mar 1, 2018",
+    "hora_salida": "22",
+    "fecha_llegada": "mar 2, 2018",
+    "hora_llegada": "2",
+    "serie_avion": "A330",
+    "precio": "180000"
+  },
+  {
+    "id": 2,
+    "origen": "Santiago",
+    "destino": "SAo Paulo",
+    "fecha_salida": "mar 2, 2018",
+    "hora_salida": "13",
+    "fecha_llegada": "mar 2, 2018",
+    "hora_llegada": "18",
+    "serie_avion": "A330",
+    "precio": "300000"
+  },
+  {
+    "id": 3,
+    "origen": "Buenos Aires",
+    "destino": "Nueva York",
+    "fecha_salida": "mar 3, 2018",
+    "hora_salida": "10",
+    "fecha_llegada": "mar 3, 2018",
+    "hora_llegada": "22",
+    "serie_avion": "A320",
+    "precio": "230000"
+  },
+  {
+    "id": 4,
+    "origen": "Nueva York",
+    "destino": "Buenos Aires",
+    "fecha_salida": "mar 4, 2018",
+    "hora_salida": "8",
+    "fecha_llegada": "mar 4, 2018",
+    "hora_llegada": "20",
+    "serie_avion": "A320",
+    "precio": "220000"
+  },
+  {
+    "id": 5,
+    "origen": "Madrid",
+    "destino": "Lisboa",
+    "fecha_salida": "mar 5, 2018",
+    "hora_salida": "10",
+    "fecha_llegada": "mar 5, 2018",
+    "hora_llegada": "14",
+    "serie_avion": "A500",
+    "precio": "250000"
+  },
+  {
+    "id": 6,
+    "origen": "Lisboa",
+    "destino": "Madrid",
+    "fecha_salida": "mar 6, 2018",
+    "hora_salida": "11",
+    "fecha_llegada": "mar 6, 2018",
+    "hora_llegada": "15",
+    "serie_avion": "B401",
+    "precio": "200000"
+  }
+]

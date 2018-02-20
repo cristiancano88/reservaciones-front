@@ -1,0 +1,6 @@
+{
+    "/" : {
+        "target" : "http://localhost:2021",
+        "secure" : false
+    }
+}

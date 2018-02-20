@@ -1,0 +1,29 @@
+<br>
+<h2>Vuelos</h2>
+<br>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Origen</th>
+        <th scope="col">Destino</th>
+        <th scope="col">Fecha Salida</th>
+        <th scope="col">Hora Salida</th>
+        <th scope="col">Fecha llegada</th>
+        <th scope="col">Hora llegada</th>
+        <th scope="col">Serie del avión</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vuelo of vuelos">
+        <th>{{vuelo.origen}}</th>
+        <td>{{vuelo.destino}}</td>
+        <td>{{vuelo.fecha_salida}}</td>
+        <td>{{vuelo.hora_salida}}</td>
+        <td>{{vuelo.fecha_llegada}}</td>
+        <td>{{vuelo.hora_llegada}}</td>
+        <td>{{vuelo.serie_avion}}</td>
+      </tr>      
+    </tbody>
+  </table>

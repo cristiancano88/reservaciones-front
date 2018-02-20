@@ -1,0 +1,70 @@
+<br>
+<h2>Vuelos</h2>
+<br>
+
+<!-- Button trigger modal -->
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Reservar</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-sm">
+        <strong>Origen</strong>: {{vueloInfo.origen}} <br>
+        <strong>Fecha salida</strong>: {{vueloInfo.destino}} <br>
+        <strong>Hora salida</strong>: {{vueloInfo.hora_salida}} <br>
+      </div>
+      <div class="col-sm">
+        <strong>Destino</strong>: {{vueloInfo.destino}} <br>
+        <strong>Fecha llegada</strong>: {{vueloInfo.fecha_llegada}} <br>
+        <strong>Hora llegada</strong>: {{vueloInfo.hora_llegada}} <br>
+      </div>
+    </div>
+    <br>  
+
+    <div class="form-group">
+      <label for="usuarioSeleccionado">Seleccione el usuario al que le quiere hacer la reserva</label>
+      <select [(ngModel)]="usuarioSeleccionado" class="form-control" id="usuarioSeleccionado">
+          <option *ngFor="let usuario of usuarios" [ngValue]="usuario">{{usuario.nombre}}</option>
+      </select>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-primary" (click)="reservar()" [disabled]="!usuarioSeleccionado">Reservar</button>
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Cerrar</button>
+  </div>
+</ng-template>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Origen</th>
+      <th scope="col">Destino</th>
+      <th scope="col">Fecha Salida</th>
+      <th scope="col">Hora Salida</th>
+      <th scope="col">Fecha llegada</th>
+      <th scope="col">Hora llegada</th>
+      <th scope="col">Serie del avión</th>
+      <th scope="col">Acciones</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let vuelo of vuelos">
+      <th>{{vuelo.origen}}</th>
+      <td>{{vuelo.destino}}</td>
+      <td>{{vuelo.fecha_salida}}</td>
+      <td>{{vuelo.hora_salida}}</td>
+      <td>{{vuelo.fecha_llegada}}</td>
+      <td>{{vuelo.hora_llegada}}</td>
+      <td>{{vuelo.serie_avion}}</td>
+      <td>
+        <!-- <button type="button" class="btn btn-primary" (click)="seleccionar(vuelo)">Reservar</button> -->
+        <button class="btn btn-primary" (click)="open(vuelo, content)">Reservar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

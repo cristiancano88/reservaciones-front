@@ -1,0 +1,28 @@
+<br>
+<h2>Mis Reservas</h2>
+<br>
+
+<b>Cedulas dispobles:</b>
+{{listCedulas}}
+
+<form [formGroup]="frmCedula">
+  <div class="input-group mb-3">
+    <input type="number" 
+            class="form-control" 
+            placeholder="Ingrese cedula" 
+            aria-label="Ingrese cedula" 
+            aria-describedby="basic-addon2"
+            formControlName="cedula">
+    <div class="input-group-append">
+      <button class="btn btn-outline-secondary" 
+              type="button"
+              (click)="getReservas()">
+                Consultar
+      </button>
+    </div>
+  </div>
+</form>
+
+<div>
+  
+</div> 

@@ -1,0 +1,4 @@
+<div *ngIf="tipo === 'info' || tipo === 'error'"
+[ngClass]="{'info': tipo === 'info', 'error': tipo === 'error'}">
+  {{mensaje}}
+</div>

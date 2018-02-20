@@ -1,0 +1,51 @@
+<br>
+<h2>Vuelos</h2>
+<br>
+
+<!-- Button trigger modal -->
+<ng-template #content let-c="close" let-d="dismiss">
+  <div class="modal-header">
+    <h4 class="modal-title">Modal title</h4>
+    <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <p>One fine body&hellip;</p>
+  </div>
+  <div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark" (click)="c('Close click')">Close</button>
+  </div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Launch demo modal</button>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Origen</th>
+      <th scope="col">Destino</th>
+      <th scope="col">Fecha Salida</th>
+      <th scope="col">Hora Salida</th>
+      <th scope="col">Fecha llegada</th>
+      <th scope="col">Hora llegada</th>
+      <th scope="col">Serie del avión</th>
+      <th scope="col">Acciones</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let vuelo of vuelos">
+      <th>{{vuelo.origen}}</th>
+      <td>{{vuelo.destino}}</td>
+      <td>{{vuelo.fecha_salida}}</td>
+      <td>{{vuelo.hora_salida}}</td>
+      <td>{{vuelo.fecha_llegada}}</td>
+      <td>{{vuelo.hora_llegada}}</td>
+      <td>{{vuelo.serie_avion}}</td>
+      <td>
+        <button type="button" class="btn btn-primary">Reservar</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

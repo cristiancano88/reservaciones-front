@@ -1,0 +1,24 @@
+<br>
+<h2>Usuarios</h2>
+<br>
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Cedula</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Edad</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vuelo of vuelos">
+        <th scope="row">{{vuelo.id}}</th>
+        <td>{{vuelo.cedula}}</td>
+        <td>{{vuelo.nombre}}</td>
+        <td>{{vuelo.edad}}</td>
+        <td>{{vuelo.email}}</td>
+      </tr>      
+    </tbody>
+  </table>
