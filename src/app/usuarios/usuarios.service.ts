@@ -4,8 +4,9 @@ import { Usuario } from '../modelos/usuario.model';
 
 @Injectable()
 export class UsuariosService {
+  api = 'http://localhost:2021/get.users';
   // api = 'assets/usuarios.json';
-  api = '/get.users';
+  // api = '/get.users';
   header = new HttpHeaders({ 'Content-Type': 'application/json' });
   constructor(private http: HttpClient) { }
 
