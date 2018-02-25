@@ -4,7 +4,7 @@ import { Vuelo } from '../modelos/vuelo.model';
 
 @Injectable()
 export class VuelosService {
-  api = 'http://localhost:2021/get.vuelos';
+  api = 'http://localhost:8080/get.vuelos';
   // api = 'assets/vuelos.json';
   header = new HttpHeaders({ 'Content-Type': 'application/json' });
   constructor(private http: HttpClient) { }
@@ -14,12 +14,10 @@ export class VuelosService {
   }
 
   reservar(data: Object) {
-    console.log(data);
-
-    // return this.http.post('http://localhost:2021/post.reservar', { data: JSON.stringify(data) }).toPromise();
+    // return this.http.post('http://localhost:8080/post.reservar', { data: JSON.stringify(data) }).toPromise();
 
     const params = new HttpParams().set('data', JSON.stringify(data));
-    return this.http.get('http://localhost:2021/post.reservar', { params: params }).toPromise();
+    return this.http.get('http://localhost:8080/post.reservar', { params: params }).toPromise();
   }
 
 }

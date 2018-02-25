@@ -35,7 +35,6 @@
         <th scope="col">Hora llegada</th>
         <th scope="col">Serie del avión</th>
         <th scope="col">Precio</th>
-        <th scope="col">Acciones</th>  
       </tr>
     </thead>
     <tbody>
@@ -48,10 +47,6 @@
         <td>{{vuelo.hora_llegada}}</td>
         <td>{{vuelo.serie_avion}}</td>
         <td>{{vuelo.precio}}</td>
-        <td>
-          <!-- <button type="button" class="btn btn-primary" (click)="seleccionar(vuelo)">Reservar</button> -->
-          <button class="btn btn-primary" (click)="open(vuelo, content)">Reservar</button>
-        </td>
       </tr>
     </tbody>
   </table>

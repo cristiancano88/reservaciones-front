@@ -2,7 +2,7 @@ import { RouterConfig } from './router.config';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { UsuariosService } from './services/usuarios.service';
+import { UsuariosService } from './usuarios/usuarios.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -20,6 +20,7 @@ import { VariableService } from './shared/variable.service';
 import { MenuComponent } from './shared/menu/menu.component';
 import { VuelosService } from './services/vuelos.service';
 import { MisReservasService } from './services/mis-reservas.service';
+import { ReservarComponent } from './services/reservar/reservar.component';
 
 
 @NgModule({
@@ -30,6 +31,7 @@ import { MisReservasService } from './services/mis-reservas.service';
     UsuariosComponent,
     VuelosComponent,
     MisReservasComponent,
+    ReservarComponent,
   ],
   imports: [
     BrowserModule,

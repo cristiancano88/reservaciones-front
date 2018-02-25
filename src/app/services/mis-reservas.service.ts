@@ -4,7 +4,7 @@ import { Usuario } from '../modelos/usuario.model';
 
 @Injectable()
 export class MisReservasService {
-  api = 'http://localhost:2021/get.users';
+  api = 'http://localhost:8080/get.users';
   header = new HttpHeaders({ 'Content-Type': 'application/json' });
   constructor(private http: HttpClient) { }
 
@@ -22,7 +22,7 @@ export class MisReservasService {
     // return this.http.get('/getReservasByCedula', options).toPromise();
 
     const params = new HttpParams().set('cedula', cedula);
-    return this.http.get('http://localhost:2021/get.reservasByCedula', { params: params }).toPromise();
+    return this.http.get('http://localhost:8080/get.reservasByCedula', { params: params }).toPromise();
     // return this.http.get('/getReservasByCedula', { params: params }).toPromise();
   }
 }

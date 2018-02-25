@@ -1,7 +1,7 @@
 import { Component, OnInit, NgModule } from '@angular/core';
 import { VuelosService } from '../services/vuelos.service';
 import { Vuelo } from '../modelos/vuelo.model';
-import { UsuariosService } from '../services/usuarios.service';
+import { UsuariosService } from '../usuarios/usuarios.service';
 import { NgbModal, ModalDismissReasons, NgbModalRef } from '@ng-bootstrap/ng-bootstrap';
 import { Usuario } from '../modelos/usuario.model';
 
